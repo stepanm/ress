@@ -1,0 +1,297 @@
+body{
+margin:0px  auto;
+padding:0px;
+}
+#wrapper{
+width:100%;
+}
+#header{
+margin:0px;
+padding:0px;
+background-color:#9ACC99;
+}
+#logo{
+height:100px;
+float:left;
+width:150px;
+background-image: url(../images/logo.png);
+background-repeat:no-repeat;
+margin:0px;
+padding:0px;
+}
+#footer{
+border-top:1px solid green;
+
+}
+#news_words{
+margin:0.2%;
+margin-bottom:3%;
+border-top: 1px dashed;
+font-size:85%;
+padding:5px;
+}
+#copyrights{
+float:right;
+color:gray;
+font-size:70%;
+}
+#date{
+float:right;
+color:#669966;
+font-weight:bold;
+}
+#fromwho{
+position:relative;
+right:0px;
+bottom:0px;
+color:#669966;;
+font-weight:bold;
+text-align:right;
+}
+#text_12{
+position:relative;
+top:10px;
+
+}
+#spbu_name{
+font-size:12pt;
+
+}
+#pmpu_name{
+font-size:18pt;
+font-weight: bold;
+}
+
+#head_other{
+height:100px;
+float:left;
+margin:0px;
+padding:5px;
+overflow:hidden;
+}
+#menu_block{
+float:left;
+width:150px;
+height:230%;
+border-right: 1px solid #5C6D5D;
+background-color:#EEFFED;
+}
+#photo_univ{
+width: 400px; 
+height: 300px;
+margin-top:20px;
+margin-left:20px;
+}
+#news{
+float:right;
+border:1px dashed 898C81;
+}
+#content{
+
+width:auto;
+padding:10px;
+background-color:yellow;
+}
+#clear{
+clear:both;
+}
+#whoareyou{
+float:left;
+
+margin:10px;
+background-color:red;
+border:1px dashed 898C81;
+height:60px;
+
+}
+
+p{
+font-size:12;
+position:absolute;
+left:155;
+top:70px;
+}
+#soc_net{
+float:right;
+position:absolute;
+top:3px;
+right:3px;
+}
+.social{
+height:32;
+width:32;
+}
+
+#spbu_w{
+position:absolute;
+left:155px;
+top:3px;
+}
+#apmath_w{
+position:absolute;
+left:155px;
+top:20px;
+}
+#strip{
+
+height:20px;
+background-color:#679966;
+border: 1px solid #346633;
+}
+#txt_pmpu{
+color:white;
+font-size:12;
+}
+
+#text{
+text-align:left;
+color:#669966;
+margin-left:20px;
+font-size: 16pt;
+}
+#slogan{
+margin-left:20px;
+}
+dt {
+background-color: rgb(153, 204, 153);
+border-bottom-color: rgb(51, 102, 51);
+border-bottom-style: solid;
+border-bottom-width: 1px;
+border-image-outset: 0px;
+border-image-repeat: stretch;
+border-image-slice: 100%;
+border-image-source: none;
+border-image-width: 1;
+border-left-color: rgb(51, 102, 51);
+border-left-style: none;
+border-left-width: 0px;
+border-right-color: rgb(51, 102, 51);
+border-right-style: solid;
+border-right-width: 1px;
+border-top-color: rgb(51, 102, 51);
+border-top-style: solid;
+border-top-width: 1px;
+color: rgb(51, 102, 51);
+display: block;
+font-family: Tahoma, sans-serif;
+font-size: 15px;
+font-style: normal;
+font-variant: normal;
+font-weight: bold;
+height: 18px;
+line-height: normal;
+margin-bottom: 3px;
+margin-left: 0px;
+margin-right: 0px;
+margin-top: 6px;
+padding-left: 2px;
+text-align: left;
+width: 155px;
+}
+dd{
+color: rgb(0, 0, 0);
+display: block;
+font-family: Tahoma, sans-serif;
+font-size: 11px;
+font-style: normal;
+font-variant: normal;
+font-weight: normal;
+
+line-height: normal;
+margin-bottom: 0px;
+margin-left: 2px;
+margin-right: 10px;
+margin-top: 0px;
+text-align: right;
+width: 140px;
+}
+
+  .button{
+text-align:center;
+width:180px;
+height:33px;
+background-color:#9CCA9B;
+border: 1px solid #435E3B;
+float:left;
+margin-top:10px;
+margin-left:20px;
+font-size:25;
+}
+#qr{
+position:absolute;
+left:25px;
+
+}
+
+#btn_menu{
+height:21px;
+
+}
+
+
+
+@media (max-width:1000px) {
+#news,#adress,#soc_net{
+display:none;
+}
+#menu_block{
+display:none;
+height:120%;
+}
+dt{
+height:30px;
+}
+#photo_univ{
+width:300px;
+height:auto;
+}
+.button{
+width:175px;
+margin-left:14px;
+}
+@media(min-width:500px){
+#menu_img{
+display:none;
+}
+#menu_block{
+display:block;
+}
+
+}
+
+
+@media(max-width:500px){
+#words,#logo,#head_other,#trebuxa{
+display:none;
+}
+
+#whoareyou{
+float:right;
+clear:right;
+height:160px;
+width:70%;
+margin-right:10px;
+}
+.button{
+float:none;
+margin:10px auto;
+}
+#copyrights_img{
+margin:0 auto;
+}
+#copyrights{
+text-align:center;
+}
+#menu_block{
+display:none;
+height:175%;
+z-index:2;
+}
+#text_12{
+z-index:1;
+}
+#news_sddsa{
+
+
+}
+}

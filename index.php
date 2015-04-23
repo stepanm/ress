@@ -1,0 +1,285 @@
+<?php
+// Include the WURFL Cloud Client
+require_once 'WURFL/Client/Client.php';
+ 
+// Create a configuration object
+$config = new WurflCloud_Client_Config();
+ 
+// Set your WURFL Cloud API Key - Change this to your own key
+$config->api_key = '657055:JiyHgUhmxq3YsI4KjbzMXtAN7dB8aTEk';
+ 
+// Create the WURFL Cloud Client
+$client = new WurflCloud_Client_Client($config);
+ 
+// Detect your device
+$client->detectDevice();
+// Use the capabilities 
+if ($client->getDeviceCapability('is_Tablet')) { 
+    echo "This is a Tablet device"; 
+	$TypeDevice = Tablet;
+	
+} else { 
+
+	if ($client->getDeviceCapability('is_smartphone')) { 
+    echo "This is a Mobile device"; 
+	$TypeDevice = Mobile;
+	
+} else { 
+    echo "This is a Desktop device\n";
+	$TypeDevice = Desktop;
+}
+    
+}
+echo "<br> resolution_width";
+echo $client->getDeviceCapability('resolution_width');
+echo "<br> resolution_height";
+echo $client->getDeviceCapability('resolution_height');
+echo "<br>";
+?>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"charset="cp1251">
+<title>ПМПУ</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<script type="text/javascript"src="jquery.js"></script>
+<div id="wrapper">
+
+
+
+
+
+
+	<div id="header">
+		<div id="logo"></div>
+		<div id="head_other">
+			<div id="words">
+				<div id="spbu_name">Санкт-Петербургский Государственный Университет</div>
+				<div id="pmpu_name">Факультет прикладной математики - <br> процессов управления</div>
+			</div>
+		<p id="adress">198504 Санкт-Петербург, Петергоф, Университетский просп., 35, тел. (812) 428-71-59</p>
+			<div id="soc_net">
+				<img src="images/vk.ico.png" class="social">
+				<img src="images/youtube.ico.png" class="social">
+				<img src="images/rss.ico.png" class="social">
+			</div>
+		
+		
+		</div>
+		<div id=clear></div>
+		<div id="strip"><img src="images/menu_lines.png" id="btn_menu"><span id="txt_pmpu"> ПМ-ПУ</span></div>
+	</div>
+	<div id="body"></div>
+		<div id="menu_block">
+		
+<div id="menu">
+		
+		
+  <dt>Информация</dt>
+  <dd>
+    <a href="http://www.apmath.spbu.ru/ru/info/about.html">о&nbsp;нас</a>, 
+    <a href="http://www.apmath.spbu.ru/ru/info/history.html">история</a>,
+    <a href="http://www.apmath.spbu.ru/ru/info/decanmeetings/">деканские совещания</a>,
+    <a href="http://www.apmath.spbu.ru/ru/vreception/">виртуальная приемная</a>,
+    <a href="http://www.apmath.spbu.ru/ru/info/museum/">музейная коллекция</a>,
+    <a href="http://www.apmath.spbu.ru/ru/info/was.html">они работали с нами</a>,
+    <a href="http://www.apmath.spbu.ru/ru/info/anniversary">40 лет</a>,
+    <a href="http://www.apmath.spbu.ru/ru/info/grants.html">стипендиаты</a>,
+    <a href="http://www.apmath.spbu.ru/ru/info/diplom/">темы дипломных работ</a> ,...
+  </dd>
+  <dt>Структура</dt>
+  <dd>
+    <a href="http://www.apmath.spbu.ru/ru/structure/admin.html">администрация</a>,
+    <a href="http://www.apmath.spbu.ru/ru/structure/council/">учёный совет</a>,
+    <a href="http://www.apmath.spbu.ru/ru/structure/metodcom/">УМК</a>, 
+    <a href="http://www.apmath.spbu.ru/ru/structure/sciencecom/">научная комиссия</a>, 
+    <a href="http://www.apmath.spbu.ru/ru/structure/depts/">кафедры</a>,
+    <a href="http://www.apmath.spbu.ru/ru/staff/">преподаватели</a>,
+    <a href="http://www.apmath.spbu.ru/ru/structure/profsoiuz/">профсоюз</a>,
+    <a href="http://www.apmath.spbu.ru/ru/structure/studsovet/">студсовет</a>,... </dd>
+  <dt>Образование</dt>
+  <dd>
+    <a href="http://www.apmath.spbu.ru/ru/education/deanery.html">учебное управление</a>,
+    <a href="http://www.apmath.spbu.ru/ru/education/edudept/">отдел образовательных программ</a>, 
+    <a href="http://www.apmath.spbu.ru/ru/education/international/">международный отдел</a>,
+    <a href="http://www.apmath.spbu.ru/ru/education/osop/">ОСОП</a>, 
+    <a href="http://www.apmath.spbu.ru/ru/education/speciality/">специальности и&nbsp;направления</a>,
+    <a href="http://www.apmath.spbu.ru/ru/education/curriculum/">учебный план</a>, 
+    <a href="http://www.apmath.spbu.ru/ru/education/tables/">расписание занятий</a>, 
+    <a href="http://www.apmath.spbu.ru/ru/education/courses/">программы курсов</a>,
+    <a href="http://www.apmath.spbu.ru/ru/education/correspondence/">заочное обучение</a>,
+    <a href="http://www.apmath.spbu.ru/ru/education/master/">магистратура</a>,
+    <a href="http://www.apmath.spbu.ru/ru/education/aspirantura/">аспирантура</a>,
+    <a href="http://www.apmath.spbu.ru/ru/education/practice/">практика</a>,
+    <a href="http://www.apmath.spbu.ru/ru/education/innovation/">инновации</a>, 
+    <a href="http://www.apmath.spbu.ru/ru/education/cdop/">доп.образование</a>, 
+    <a href="http://www.apmath.spbu.ru/ru/education/osop/probdept/">повышение квалификации</a>,
+    <a href="http://www.apmath.spbu.ru/ru/education/docs/">шаблоны и образцы документов</a>,... </dd>
+  <dt>Наука</dt>
+  <dd>
+    <a href="http://www.apmath.spbu.ru/ru/research/council/">диссертационные советы</a>,
+    <a href="http://www.apmath.spbu.ru/ru/research/conference/">конференции</a>,
+    <a href="http://www.apmath.spbu.ru/ru/research/schools/">научные школы</a>,
+    <a href="http://www.apmath.spbu.ru/ru/research/projects/">проекты</a>,
+    <a href="http://www.apmath.spbu.ru/ru/research/monographs.html">публикации</a>,
+    <a href="http://vmpu.spbu.ru/">НИИ&nbsp;ВМ&nbsp;и&nbsp;ПУ</a>,
+    <a href="http://www.isdgrus.ru/">Центр теории игр</a>, 
+    <a href="http://www.apmath.spbu.ru/ru/research/ids/">НОЦ&nbsp;ИНДИС</a>,
+    <a href="http://www.apmath.spbu.ru/ru/research/eccs/">Центр ECCS</a>,... </dd>
+  <dt>Поступающим</dt>
+  <dd>
+    <a href="http://www.apmath.spbu.ru/ru/admission/r.html">образовательные программы</a>,
+    <a href="http://www.apmath.spbu.ru/ru/admission/r.html">мероприятия</a>,
+    <a href="http://www.apmath.spbu.ru/ru/admission/olympics.html">олимпиады</a>, 
+    <a href="http://www.apmath.spbu.ru/ru/admission/training.html">подготовительные курсы</a>,
+    <a href="http://www.apmath.spbu.ru/ru/admission/r.html">правила поступления</a>,
+    <a href="http://www.apmath.spbu.ru/ru/admission/r.html">платная форма</a>,
+    <a href="http://www.apmath.spbu.ru/ru/admission/r.html">прием в магистратуру</a>,... </dd>
+  <dt>Ресурсы</dt>
+  <dd>
+    <a href="http://www.apmath.spbu.ru/ru/resource/library/">библиотека</a>,
+    <a href="http://www.apmath.spbu.ru/ru/resource/po/">лицензионное ПО</a>,
+    <a href="http://www.apmath.spbu.ru/ru/resource/mspress.html">книги</a>,
+    <a href="http://www.apmath.spbu.ru/ru/resource/vestnik/">Вестник СПбГУ</a>,... </dd>
+  <dt>Выпускники</dt>
+  <dd>
+    <a href="http://www.apmath.spbu.ru/ru/alumni/job/">трудоустройство,</a>
+    <a href="http://www.apmath.spbu.ru/ru/alumni/1972/">1972</a>,
+    <a href="http://www.apmath.spbu.ru/ru/alumni/1975/">1975</a>,
+    <a href="http://www.apmath.spbu.ru/ru/alumni/1976/">1976</a>,
+    <a href="http://www.apmath.spbu.ru/ru/alumni/1979/">1979</a>,
+    <a href="http://www.apmath.spbu.ru/ru/alumni/1981/">1981</a>,
+    <a href="http://www.apmath.spbu.ru/ru/alumni/1983/">1983</a>,
+    <a href="http://www.apmath.spbu.ru/ru/alumni/1984/">1984</a>,
+    <a href="http://www.apmath.spbu.ru/ru/alumni/1985/">1985</a>,
+    <a href="http://www.apmath.spbu.ru/ru/alumni/1986/">1986</a>,
+    <a href="http://www.apmath.spbu.ru/ru/alumni/1987/">1987</a>,
+    <a href="http://www.apmath.spbu.ru/ru/alumni/1988/">1988</a>,
+    <a href="http://www.apmath.spbu.ru/ru/alumni/1989/">1989</a>,
+    <a href="http://www.apmath.spbu.ru/ru/alumni/1990/">1990</a>,
+    <a href="http://www.alumni.spbu.ru/">выпускники СПбГУ</a>,... </dd>
+  <dt>Фотоальбом</dt>
+  <dd>
+  <a href="http://www.apmath.spbu.ru/ru/misc/album/2014/">2014</a>, 
+  <a href="http://www.apmath.spbu.ru/ru/misc/album/2013/">2013</a>, 
+  <a href="http://www.apmath.spbu.ru/ru/misc/album/2012/">2012</a>, 
+  <a href="http://www.apmath.spbu.ru/ru/misc/album/2011/">2011</a>, 
+  <a href="http://www.apmath.spbu.ru/ru/misc/album/2010/">2010</a>, 
+  <a href="http://www.apmath.spbu.ru/ru/misc/album/2009/">2009</a>, 
+  <a href="http://www.apmath.spbu.ru/ru/misc/album/2008/">2008</a>, 
+  <a href="http://www.apmath.spbu.ru/ru/misc/album/2007/">2007</a>, 
+  <a href="http://www.apmath.spbu.ru/ru/misc/album/2006/">2006</a>, 
+  <a href="http://www.apmath.spbu.ru/ru/misc/album/2005/">2005</a>, 
+  <a href="http://www.apmath.spbu.ru/ru/misc/album/2004/">2004</a>, 
+  <a href="http://www.apmath.spbu.ru/ru/misc/album/2003/">2003</a>, 
+  <a href="http://www.apmath.spbu.ru/ru/misc/album/2002/">2002</a>, 
+  <a href="http://www.apmath.spbu.ru/ru/misc/album/2001/">2001</a>
+  </dd>
+  <dt>Разное</dt>
+  <dd>
+    <a href="http://www.apmath.spbu.ru/ru/misc/thanks.html">благодарности</a>,
+    <a href="http://www.apmath.spbu.ru/ru/misc/soul/">в&nbsp;свободное&nbsp;время</a>,
+    <a href="http://www.apmath.spbu.ru/ru/misc/links.html">ссылки</a>,
+    <a href="http://www.apmath.spbu.ru/ru/misc/articles/">статьи о факультете</a>,
+    <a href="http://pm-pu.proforg.ru/">студенческий сайт</a>,
+    </dd>
+</dl>
+		
+		</div>	
+		<img src="images/qr.png" id="qr">
+		
+		</div>
+		
+			<div id="news">
+				<img src="images/programs.png" id="news-s"><br>
+				<img src="images/spbu_news.png" >
+			</div>
+		<div id="content">
+			
+			
+			<div id="whoareyou">
+				<div id="abit" class="button">Поступающий</div>
+				<div id="stud" class="button">Студент</div>
+				<div id="prof" class="button">Преподаватель</div>
+
+			</div>
+		
+		<br>
+		<div id="trebuxa">
+		<a href="/vtour/" alt="Виртуальный тур по факультету (beta)" title="Виртуальный тур по факультету (beta)"><img  src="<?php echo $TypeDevice?>.jpg" id="photo_univ"  alt="[New building photo]" /></a><br /> 
+
+
+<h3 id = "slogan">ПМ-ПУ &#8211; ключ к модернизации, инновациям, информатизации (Петросян&nbsp;Л.А.)</h3>
+
+<a href="/vtour/" id="slogan">Виртуальный тур по факультету</a>
+
+Мы на YouTube: <a href="http://www.youtube.com/user/AMCPSPbSU">канал ПМ-ПУ</a>, <a href="http://www.youtube.com/user/TheUFOPictures">Видеолаборатория UFO</a>
+		</div>
+				
+
+<div id="news_sddsa">
+		<h2 id="text">Новости</h2>
+		
+<div id="news_words">
+	<span id="date">2015-02-26</span>
+<span id="text_12">СПбГУ в тройке лидеров во всемирной сети
+
+СПбГУ занял одну из лидирующих позиций среди российских университетов в рейтинге сайтов высших учебных заведений Webometrics.
+
+Это стало одним из вопросов, которые обсудили на ректорском совещании 16 февраля 2015 года.<span>
+
+<span id="fromwho">Управление по связям с общественностью СПбГУ</span>
+	</div>
+		
+	
+	<div id="news_words">
+	<span id="date">2015-02-26</span>
+<span id="text_12">СПбГУ в тройке лидеров во всемирной сети
+
+СПбГУ занял одну из лидирующих позиций среди российских университетов в рейтинге сайтов высших учебных заведений Webometrics.
+
+Это стало одним из вопросов, которые обсудили на ректорском совещании 16 февраля 2015 года.<span>
+
+<span id="fromwho">Управление по связям с общественностью СПбГУ</span>
+	</div>
+		
+		
+		</div>
+		
+		</div>
+		<div id="clear"></div>
+		
+	<div id="footer"><img src="images/footer_rss.png" id="footer_img">
+	<span id="copyrights">© 2002-2014 Факультет ПМ-ПУ Санкт-Петербургского государственного университета</span>
+	</div>
+
+</div>
+<script type="text/javascript">
+$(document).ready(function() {
+$("#menu dd").hide();
+$("#menu dt").click(function() {
+    $("#menu dd:visible").slideUp("normal");
+    if (($(this).next().is("dd")) && (!$(this).next().is(":visible"))) {
+        $(this).next().slideDown("normal");
+    }
+});
+});
+$(document).ready(function() {
+//$("#menu_block").hide();
+k=0;
+$("#btn_menu").click(function() {
+	if (k%2==0){
+    $("#menu_block").slideDown("normal");
+	k++;
+	}
+	else{
+	$("#menu_block").slideUp();
+	k++;
+	}
+});
+});
+</script>
+</body>
+</html>
