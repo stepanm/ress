@@ -14,27 +14,29 @@ $client = new WurflCloud_Client_Client($config);
 // Detect your device
 $client->detectDevice();
 // Use the capabilities 
+
 if ($client->getDeviceCapability('is_Tablet')) { 
-    echo "This is a Tablet device"; 
+    //echo "This is a Tablet device"; 
 	$TypeDevice = Tablet;
 	
 } else { 
 
 	if ($client->getDeviceCapability('is_smartphone')) { 
-    echo "This is a Mobile device"; 
+   // echo "This is a Mobile device"; 
 	$TypeDevice = Mobile;
 	
 } else { 
-    echo "This is a Desktop device\n";
+   // echo "This is a Desktop device\n";
 	$TypeDevice = Desktop;
 }
     
 }
+/*
 echo "<br> resolution_width";
 echo $client->getDeviceCapability('resolution_width');
 echo "<br> resolution_height";
 echo $client->getDeviceCapability('resolution_height');
-echo "<br>";
+echo "<br>";*/
 ?>
 
 <html>
@@ -42,18 +44,19 @@ echo "<br>";
 <meta http-equiv="Content-Type" content="text/html"charset="cp1251">
 <title>ПМПУ</title>
 <link rel="stylesheet" href="css/style.css">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+
 </head>
 <body>
 <script type="text/javascript"src="jquery.js"></script>
 <div id="wrapper">
-
-
-
-
-
-
 	<div id="header">
-		<div id="logo"></div>
+		<div id="logo">
+		<?php 
+		if ($TypeDevice=="Desktop" or $TypeDevice=="Tablet")
+		echo'<img  src="images/logo.png"   alt="[logo]" />';
+		?>
+		</div>
 		<div id="head_other">
 			<div id="words">
 				<div id="spbu_name">Санкт-Петербургский Государственный Университет</div>
@@ -61,9 +64,13 @@ echo "<br>";
 			</div>
 		<p id="adress">198504 Санкт-Петербург, Петергоф, Университетский просп., 35, тел. (812) 428-71-59</p>
 			<div id="soc_net">
-				<img src="images/vk.ico.png" class="social">
-				<img src="images/youtube.ico.png" class="social">
-				<img src="images/rss.ico.png" class="social">
+			<?php 
+		if ($TypeDevice=="Desktop") {
+		echo'<img  src="images/vk.ico.png" class="social" alt="[vk]" />';
+		echo'<img  src="images/youtube.ico.png" class="social" alt="[vk]" />';
+		echo'<img  src="images/rss.ico.png" class="social" alt="[vk]" />';
+		}
+		?>
 			</div>
 		
 		
@@ -193,8 +200,60 @@ echo "<br>";
 		</div>
 		
 			<div id="news">
-				<img src="images/programs.png" id="news-s"><br>
-				<img src="images/spbu_news.png" >
+			<div id=news-images>
+			<?php 
+		if ($TypeDevice=="Desktop"){
+		echo'<img  src="images/banner.2020.png"  alt="[banner.2020]" />';
+		echo'<img  src="images/banner.eccs.png"   alt="[banner.eccs]" />';
+		echo'<img  src="images/banner.gtm2015.png"   alt="[banner.gtm2015]" />';
+		echo'<img  src="images/banner.pm46.ru.png"   alt="[banner.pm46.ru]" />';
+		echo'<img  src="images/banner.psih.png"   alt="[banner.psih]" />';
+		echo'<img  src="images/banner.scp2015.png" alt="[banner.scp2015]" />';
+		echo'<img  src="images/banner.virtual.png"  alt="[banner.virtual]" />';
+		echo'<img  src="images/banner.yur.png"  alt="[banner.yur]" />';
+		echo'<img  src="images/banner-pmpu-abitur.png"   alt="[banner-pmpu-abitur]" />';
+		}
+		?>
+			
+				</div>
+				<div id = "text_news">
+				
+<div class="rssdiv">
+
+<h2>СПбГУ: Информация</h2>
+</div>
+			<h4><a href="http://spbu.ru/news-spsu/23697-dobrozhelatelnyj-roman-s-uspekhom-proshel-v-polufinal-premer-ligi-kvn" title="View this feed at Санкт-Петербургский государственный университет" target="_blank">«Доброжелательный Роман» с успехом прошел в полуфинал Премьер-лиги КВН</a></h4>
+<p>Команда КВН Санкт-Петербургского государственного университета «Доброжелательный Роман» выступила в ...</p>
+
+<h4><a href="http://spbu.ru/news-spsu/23695-v-spbgu-nagradili-pobeditelej-mezhdunarodnogo-literaturnogo-konkursa-70-stikhov-o-vojne-i-pobede" title="View this feed at Санкт-Петербургский государственный университет" target="_blank">В СПбГУ наградили победителей международного литературного конкурса «70 стихов о войне и Победе»</a></h4>
+В Санкт-Петербургском государственном университете состоялась торжественная церемония награждения победителей I ...
+
+<h4><a href="http://spbu.ru/news-spsu/23693-molodym-uchenym-spbgu-vruchili-sertifikaty-na-poluchenie-grantov-prezidenta-rossijskoj-federatsii" title="View this feed at Санкт-Петербургский государственный университет" target="_blank">Молодым ученым СПбГУ вручили сертификаты на получение грантов президента Российской Федерации</a></h4>
+Молодым ученым — кандидатам и докторам наук, работающим в Санкт-Петербургском государственном университете, вручили ...
+
+<h4><a href="http://spbu.ru/news-spsu/23690-kratkij-otchet-o-rektorskom-soveshchanii-12-maya" title="View this feed at Санкт-Петербургский государственный университет" target="_blank">Краткий отчет о ректорском совещании 12 мая</a></h4>
+На ректорском совещании 12 мая обсуждались следующие вопросы:
+
+<h4><a href="http://spbu.ru/news-spsu/23687-universanty-udostoeny-vysshikh-gosudarstvennykh-nagrad-i-pochetnykh-zvanij" title="View this feed at Санкт-Петербургский государственный университет" target="_blank">Универсанты удостоены высших государственных наград и почетных званий</a></h4>
+Профессор СПбГУ Ватаняр Саидович Ягья и доцент СПбГУ Константин Константинович Лебедев получили  государственные награды ...
+
+<h4><a href="http://spbu.ru/news-spsu/23685-aktsiya-verni-knigu-domoj" title="View this feed at Санкт-Петербургский государственный университет" target="_blank">Акция «Верни книгу домой»</a></h4>
+В преддверии общероссийского Дня библиотек Санкт-Петербургский государственный университет проводит акцию «Верни книгу ...
+
+<h4><a href="http://spbu.ru/news-spsu/23681-203-materialy-rektorskogo-soveshchaniya-ot-27-04-2015" title="View this feed at Санкт-Петербургский государственный университет" target="_blank">203. Материалы ректорского совещания от 27.04.2015</a></h4>
+На ректорском совещании 27 апреля обсуждались следующие вопросы:
+
+<h4><a href="http://spbu.ru/news-spsu/23679-otryad-spbgu-ingriya-uspeshno-zavershil-44-yu-vakhtu-pamyati" title="View this feed at Санкт-Петербургский государственный университет" target="_blank">Отряд СПбГУ «Ингрия» успешно завершил 44-ю Вахту Памяти</a></h4>
+В год 70-летия Великой Победы студенческий поисковый отряд  Санкт-Петербургского государственного университета ...
+
+<h4><a href="http://spbu.ru/news-spsu/23678-student-spbgu-zanyal-pervoe-mesto-v-konkurse-most-kitajskogo-yazyka" title="View this feed at Санкт-Петербургский государственный университет" target="_blank">Студент СПбГУ занял первое место в конкурсе «Мост китайского языка»</a></h4>
+В Санкт-Петербургском государственном университете прошел городской студенческий конкурс на знание китайского языка, победу в ...
+
+<h4><a href="http://spbu.ru/news-spsu/23674-musora-mozhet-byt-menshe-eto-vozmozhno" title="View this feed at Санкт-Петербургский государственный университет" target="_blank">Мусора может быть меньше: это возможно</a></h4>
+Как уменьшить объем вывозимых на полигоны твердых бытовых отходов (ТБО)? Как получить доход от продажи вторсырья, собранного ...
+<br>
+Все новости
+</div>
 			</div>
 		<div id="content">
 			
@@ -208,7 +267,16 @@ echo "<br>";
 		
 		<br>
 		<div id="trebuxa">
-		<a href="/vtour/" alt="Виртуальный тур по факультету (beta)" title="Виртуальный тур по факультету (beta)"><img  src="<?php echo $TypeDevice?>.jpg" id="photo_univ"  alt="[New building photo]" /></a><br /> 
+		<a href="/vtour/" alt="Виртуальный тур по факультету (beta)" title="Виртуальный тур по факультету (beta)">
+		<?php 
+		if ($TypeDevice=="Desktop")
+		echo'<img  src="images/photo_univ_big.jpg" id="photo_univ"  alt="[New building photo]" />';
+		if ($TypeDevice=="Tablet")
+		echo'<img  src="images/photo_univ_small.jpg" id="photo_univ"  alt="[New building photo]" />';
+		if ($TypeDevice=="Mobile")
+		echo'<img  src="images/Mobile.jpg" id="photo_univ"  alt="[New building photo]" />';
+		?>
+		</a><br /> 
 
 
 <h3 id = "slogan">ПМ-ПУ &#8211; ключ к модернизации, инновациям, информатизации (Петросян&nbsp;Л.А.)</h3>

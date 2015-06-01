@@ -14,8 +14,6 @@ background-color:#9ACC99;
 height:100px;
 float:left;
 width:150px;
-background-image: url(../images/logo.png);
-background-repeat:no-repeat;
 margin:0px;
 padding:0px;
 }
@@ -72,9 +70,10 @@ overflow:hidden;
 #menu_block{
 float:left;
 width:150px;
-height:230%;
+height:300%;
 border-right: 1px solid #5C6D5D;
 background-color:#EEFFED;
+z-index:2;
 }
 #photo_univ{
 width: 400px; 
@@ -90,22 +89,74 @@ border:1px dashed 898C81;
 
 width:auto;
 padding:10px;
-background-color:yellow;
 }
 #clear{
 clear:both;
 }
+#image_main{
+margin-left:20px;
+width:50%;
+height:auto;
+}
 #whoareyou{
-float:left;
 
 margin:10px;
-background-color:red;
+padding-left:10px;
 border:1px dashed 898C81;
 height:60px;
-
+width:70%;
+z-index:3;
+}
+.button{
+text-align:center;
+width:180px;
+height:33px;
+background-color:#9CCA9B;
+border: 1px solid #435E3B;
+margin-top:10px;
+margin-left:20px;
+font-size:25;
+}
+#abit{
+position:absolute;
+left:170px;
+}
+#stud{
+position:absolute;
+left:370px;
+}
+#prof{
+position:absolute;
+left:570px;
+z-index:1;
 }
 
-p{
+.rssdiv h2 { /* новости спбгу шрифт*/
+  text-align: center;
+  background-color: #99cc99;
+  color: #336633;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 0px;
+}
+#news-images{/*справа новости в картинках*/
+background-color:white;
+border: 1px dashed black;
+margin:5px;
+padding:3px;
+width:300px;
+z-index: 2;
+}
+
+#text_news{/*текст новостей справа спбгу*/
+width:300px;
+height:auto;
+background-color:white;
+border:1px dashed black;
+margin:5px;
+padding:3px;
+}
+#adress{
 font-size:12;
 position:absolute;
 left:155;
@@ -206,17 +257,7 @@ text-align: right;
 width: 140px;
 }
 
-  .button{
-text-align:center;
-width:180px;
-height:33px;
-background-color:#9CCA9B;
-border: 1px solid #435E3B;
-float:left;
-margin-top:10px;
-margin-left:20px;
-font-size:25;
-}
+
 #qr{
 position:absolute;
 left:25px;
@@ -249,49 +290,83 @@ height:auto;
 width:175px;
 margin-left:14px;
 }
-@media(min-width:500px){
+@media(min-width:641px){
 #menu_img{
 display:none;
 }
 #menu_block{
 display:block;
 }
-
+#whoareyou{
+width:95%;
 }
 
+}
+@media(max-width:800px){
+#whoareyou{
 
-@media(max-width:500px){
+height:160px;
+
+}
+#abit{
+position:absolute;
+left:300px;
+top:150px;
+}
+#stud{
+position:absolute;
+left:300px;
+top:190px;
+}
+#prof{
+position:absolute;
+left:300px;
+top:230px;
+}
+}
+@media(max-width:640px){
 #words,#logo,#head_other,#trebuxa{
 display:none;
 }
 
 #whoareyou{
-float:right;
-clear:right;
+
 height:160px;
-width:70%;
+width:auto;
 margin-right:10px;
 }
-.button{
-float:none;
-margin:10px auto;
+#abit{
+position:absolute;
+left:100px;
+top:50px;
+margin-left:60px;
 }
+
+#stud{
+position:absolute;
+left:100px;
+top:90px;
+margin-left:60px;
+}
+#prof{
+position:absolute;
+left:100px;
+top:130px;
+margin-left:60px;
+}
+
 #copyrights_img{
 margin:0 auto;
 }
 #copyrights{
 text-align:center;
 }
+
 #menu_block{
 display:none;
 height:175%;
-z-index:2;
+margin-right:9px;
 }
-#text_12{
-z-index:1;
-}
-#news_sddsa{
-
 
 }
 }
